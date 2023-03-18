@@ -11,3 +11,6 @@ If you need another license type added that github has a summary for, let me kno
 
 ## License Shields
 All of the license shields used are sourced from [Markdown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) thank you lukas-h for making these.
+
+## Legal Disclaimer
+All of the licensing in this repo is provided as-is with no recommendations on which licensing you should pick. It is still your responsibility to do the research on the license type that best fits your project, and to consult an attorney as needed.
