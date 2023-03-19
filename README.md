@@ -1,16 +1,23 @@
 # GB-LicenseEmbeds
-Quick and dirty repo for license embeds on gamebanana designed to mimic how github presents its licensing summaries.  
-Example of how they look.  
-![License Embed Example](https://user-images.githubusercontent.com/45508320/226141549-d5963660-5c17-4464-a039-eabe0df02a0a.png)
+Quick and dirty repo for license embeds on GameBanana, designed to mimic how GitHub presents its licensing summaries.  
+
+### Example
+
+![License Embed Example](https://user-images.githubusercontent.com/11445611/226152174-05aa8fa9-c2c3-488d-8e26-18545e108c96.png)
 
 # Usage
-Open the html file of the license you want to use, copy and paste the contents into the source tab of GB's license area. Make sure you also check the license check list and set appropriately.
+* Open the `html` file of the license you would like to use in a text editor and copy its contents.
+* In GameBanana, open the **Edit** page for your submission.
+* Select the **Ownership** tab and scroll down to the **License** area.
+* Select the **Source** tab in the **License** area and paste the contents of the `html` file.
+* Configure the **License Checklist** appropriately, then save your submission.
 
 # Other licenses
-If you need another license type added that github has a summary for, let me know or make a PR and update an existing one.
+If you need another license type added that GitHub has a summary for, let me know or make a PR and update an existing one.
 
 ## License Shields
-All of the license shields used are sourced from [Markdown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) thank you lukas-h for making these.
+* CC license shields are sourced from [licensebuttons.net](https://licensebuttons.net/).
+* Text license shields are generatede from [Shields.io](https://shields.io/).
 
 ## Legal Disclaimer
-All of the licensing in this repo is provided as-is with no recommendations on which licensing you should pick. It is still your responsibility to do the research on the license type that best fits your project, and to consult an attorney as needed.
+All of the licenses in this repo are provided as-is with no recommendations on which license you should pick. It is still your responsibility to do the research on the license type that best fits your project and to consult an attorney as needed.
