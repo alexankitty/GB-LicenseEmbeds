@@ -16,7 +16,8 @@ Quick and dirty repo for license embeds on GameBanana, designed to mimic how Git
 If you need another license type added that GitHub has a summary for, let me know or make a PR and update an existing one.
 
 ## License Shields
-All of the license shields used are sourced from [Markdown License Badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba) by lukas-h and [shields.io](https://shields.io/).
+* CC license shields are sourced from [licensebuttons.net](https://licensebuttons.net/).
+* Text license shields are generatede from [Shields.io](https://shields.io/).
 
 ## Legal Disclaimer
 All of the licenses in this repo are provided as-is with no recommendations on which license you should pick. It is still your responsibility to do the research on the license type that best fits your project and to consult an attorney as needed.
