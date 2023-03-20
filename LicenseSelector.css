@@ -34,13 +34,16 @@ body {
 }
 
 code-input {
-    height: calc(100% - 32px)!important;
-    width: auto!important;
-    margin-left: 4px;
-    margin-top: 4px;
+  height: calc(100% - 32px)!important;
+  width: auto!important;
+  margin-left: 4px;
+  margin-top: 4px;
 }
 code-input pre code::-webkit-scrollbar { 
   display: none!important;  /* Safari and Chrome */
+}
+code-input textarea {
+  cursor: auto;
 }
 
 .resizable-content {
@@ -54,6 +57,7 @@ code-input pre code::-webkit-scrollbar {
     overflow: hidden;
     background-color: #2E3440;
     vertical-align: top;
+    height: calc(auto + 16px);
 }
 
 .preview{
