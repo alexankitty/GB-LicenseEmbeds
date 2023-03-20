@@ -36,6 +36,8 @@ body {
 code-input {
     height: calc(100% - 32px)!important;
     width: auto!important;
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 .resizable-content {
