@@ -6,6 +6,8 @@ var codeBlock = document.getElementById('codeBlock')
 var codeBlockText = codeBlock.firstChild;
 var preview = document.getElementById("previewArea");
 var licRoot = 'https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/contents/Licenses';
+var timeout = null;
+
 (async () => {
     try{
         await directoryWalk(licRoot);
@@ -14,7 +16,13 @@ var licRoot = 'https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/content
         let error = document.getElementById("error");
         error.innerText = `An error has occurred, please try again later. (In an hour) ${e}`
     }
-    buildSelect();
+    await buildSelect();
+    codeBlockText.addEventListener('keyup', function (e) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            preview.innerHTML = codeBlockText.value;
+        }, 1000);
+    });
 })()
 
 async function directoryWalk(url){
@@ -89,4 +97,4 @@ async function showSnackBar(value){
     
     // After 3 seconds, remove the show class from DIV
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    } 
+} 
