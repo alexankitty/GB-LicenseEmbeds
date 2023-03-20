@@ -2,10 +2,26 @@
 <html>
     <head>
         <link rel="stylesheet" href="LicenseSelector.css">
+        <script src="https://cdn.jsdelivr.net/gh/WebCoder49/code-input@1.2/code-input.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WebCoder49/code-input@1.2/code-input.min.css"><!--ref https://github.com/WebCoder49/code-input-->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" /><!--ref https://highlightjs.org/-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <script defer src="LicenseSelector.js"></script>
     </head>
     <body>
-        <h1>🍌GB-LicenseEmbeds Previewer</h1>
-        <div></div>
+        <div class="titleArea">
+            <h1>🍌GB-LicenseEmbeds Selector</h1>
+            <div id="error"></div>
+            <div class="controls">
+                <select id="selection" onchange="onSelect(this.value)"></select>
+                <button onclick="clipboardCopy()">Copy to clipboard</button>
+            </div>
+        </div>
+        <div class="preview" id="previewArea">
+        </div>
+        <div class="resizable-content">
+            <code-input id="codeBlock" lang="HTML"></code-input>  
+        </div>
+        <div id="snackbar"></div>
     </body>
 </html>

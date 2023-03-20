@@ -1,16 +1,147 @@
+
 html {
     font-family: sans-serif;
 }
 
+body {
+    background-image: linear-gradient(
+        45deg,
+        hsl(197deg 100% 62%) 0%,
+        hsl(199deg 81% 56%) 11%,
+        hsl(201deg 67% 50%) 22%,
+        hsl(203deg 69% 44%) 33%,
+        hsl(205deg 70% 39%) 44%,
+        hsl(208deg 72% 33%) 56%,
+        hsl(211deg 74% 28%) 67%,
+        hsl(214deg 79% 22%) 78%,
+        hsl(218deg 88% 17%) 89%,
+        hsl(225deg 97% 12%) 100%
+      );
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
 .BlueColor {
-    color: "#6CB1E1"
+    color: #6CB1E1
 }
 
 .GreenColor {
-    color: "#6EE16C"
+    color: #6EE16C
 }
 
 .RedColor {
-    color: "#FF4E4E"
+    color: #FF4E4E
 }
 
+code-input {
+    height: calc(100% - 32px)!important;
+    width: auto!important;
+}
+
+.resizable-content {
+    display:inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: both;
+    height: 300px;
+    width: 650px;
+    overflow: auto;
+    background-color: #2E3440;
+    vertical-align: top;
+}
+
+.preview{
+    display:inline-block;
+    margin: 10px;
+    color: white;
+    background-color: #2E3440;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.preview * {
+    margin: 0px;
+    padding: 0px;
+}
+
+.preview a{
+    color: #FF4E4E;
+    
+}
+
+.preview a:hover{
+    color: #FD70E1;
+}
+
+.controls {
+    padding: 10px;
+    margin: 10px;
+}
+
+.controls select {
+    width: 270px;
+}
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+ #snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #2E3440; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 20px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+  
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  } 
+
+#error {
+    color: red;
+}
+.titleArea {
+    background-color: #2E3440;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    color:white;
+}
