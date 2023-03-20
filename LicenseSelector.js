@@ -1,12 +1,15 @@
+var directoryOutput;
+var dirObj = new Object();
+var root = 'https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/contents/'
 (async () => {
     const response = await fetch('https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/contents/');
     const data = await response.json();
-    let htmlString = '<ul>';
-    
-    for (let file of data) {
-      htmlString += `<li><a href="${file.path}">${file.name}</a></li>`;
+    directoryOutput = data;
+    for (let file of data) {//directory walking
     }
-
-    htmlString += '</ul>';
-    document.getElementsByTagName('body')[0].innerHTML = htmlString;
 })()
+
+function directoryWalk(url){
+    
+    const response = 
+}
