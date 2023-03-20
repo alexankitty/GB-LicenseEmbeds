@@ -180,3 +180,7 @@ a {
   .title {
     margin-left: 15px;
   }
+
+  .favicon {
+    vertical-align: text-bottom;
+  }
