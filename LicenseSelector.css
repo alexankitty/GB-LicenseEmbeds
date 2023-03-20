@@ -39,6 +39,9 @@ code-input {
     margin-left: 4px;
     margin-top: 4px;
 }
+code-input pre code::-webkit-scrollbar { 
+  display: none!important;  /* Safari and Chrome */
+}
 
 .resizable-content {
     display:inline-block;
@@ -48,7 +51,7 @@ code-input {
     resize: both;
     height: 300px;
     width: 650px;
-    overflow: auto;
+    overflow: hidden;
     background-color: #2E3440;
     vertical-align: top;
 }
@@ -161,13 +164,13 @@ a {
   }
   
   ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px     rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
   }
   
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px     rgba(255,255,255,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
   }
   ::-webkit-scrollbar-corner {
       background: transparent;
