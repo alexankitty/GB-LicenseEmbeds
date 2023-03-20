@@ -10,7 +10,26 @@ var timeout = null;
 
 (async () => {
     try{
-        await directoryWalk(licRoot);
+        let getcommit = await fetch("https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/commits/main")
+        let commit = await getcommit.json();
+        let commitCheck = localStorage.getItem("commitSha")
+        if(commit.sha == commitCheck) {
+            dirObj = localStorage.getItem("dirObj");
+            if(!dirObj){
+                await directoryWalk(licRoot);
+                localStorage.setItem("dirObj", JSON.stringify(dirObj));
+            }
+            else{
+                dirObj = JSON.parse(dirObj);
+                console.log("Cache checked passed, loading data.");
+            }
+        } 
+        else {
+            await directoryWalk(licRoot);
+            localStorage.setItem("dirObj", JSON.stringify(dirObj));
+            localStorage.setItem("commitSha", commit.sha)
+        }
+        
     }
     catch(e){
         let error = document.getElementById("error");
