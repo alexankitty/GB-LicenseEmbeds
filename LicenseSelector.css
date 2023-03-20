@@ -79,6 +79,14 @@ code-input {
     color: #FD70E1;
 }
 
+a:hover {
+  color: #FD70E1;
+}
+
+a {
+  color: #FF4E4E;
+}
+
 .controls {
     padding: 10px;
     margin: 10px;
@@ -163,4 +171,8 @@ code-input {
   }
   ::-webkit-scrollbar-corner {
       background: transparent;
+  }
+  .githubInfo {
+    padding: 5px;
+    margin-left: 15px;
   }
