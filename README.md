@@ -8,6 +8,7 @@ Quick and dirty repo for license embeds on GameBanana, designed to mimic how Git
 # Web Interface Usage
 * Navigate to https://alexankitty.github.io/GB-LicenseEmbeds/LicenseSelector.html in your broswer.
 * Use the drop down to select the license type you need.
+* You can edit the html as needed, the page will also update once you stop typing.
 * Click copy, or select all of the text in the codeblock and copy it.
 * In GameBanana, open the **Edit** page for your submission.
 * Select the **Ownership** tab and scroll down to the **License** area.
