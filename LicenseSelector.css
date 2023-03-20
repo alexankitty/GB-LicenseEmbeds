@@ -43,7 +43,7 @@ code-input {
 .resizable-content {
     display:inline-block;
     margin: 10px;
-    box-shadow: 3px 3px rgba(10,10,10,0.7);
+    box-shadow: 8px 8px rgba(10,10,10,0.5);
     border-radius: 10px;
     resize: both;
     height: 300px;
@@ -58,7 +58,7 @@ code-input {
     margin: 10px;
     color: white;
     background-color: #2E3440;
-    box-shadow: 3px 3px rgba(10,10,10,0.7);
+    box-shadow: 8px 8px rgba(10,10,10,0.5);
     border-radius: 10px;
     width: fit-content;
     padding: 10px;
@@ -149,7 +149,7 @@ a {
 .titleArea {
     background-color: #2E3440;
     border-radius: 20px;
-    box-shadow: 3px 3px rgba(10,10,10,0.7);
+    box-shadow: 8px 8px rgba(10,10,10,0.5);
     width: fit-content;
     padding: 10px;
     margin: 10px;
