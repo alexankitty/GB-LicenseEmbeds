@@ -43,7 +43,7 @@ code-input {
 .resizable-content {
     display:inline-block;
     margin: 10px;
-    border: 1px solid black;
+    box-shadow: 3px 3px #111;
     border-radius: 10px;
     resize: both;
     height: 300px;
@@ -58,7 +58,7 @@ code-input {
     margin: 10px;
     color: white;
     background-color: #2E3440;
-    border: 1px solid black;
+    box-shadow: 3px 3px #111;
     border-radius: 10px;
     width: fit-content;
     padding: 10px;
@@ -102,6 +102,7 @@ code-input {
     z-index: 1; /* Add a z-index if needed */
     left: 50%; /* Center the snackbar */
     bottom: 30px; /* 30px from the bottom */
+    box-shadow: 3px 3px #111;
   }
   
   /* Show the snackbar when clicking on a button (class added with JavaScript) */
@@ -140,7 +141,7 @@ code-input {
 .titleArea {
     background-color: #2E3440;
     border-radius: 20px;
-    border: 1px solid black;
+    box-shadow: 3px 3px #111;
     width: fit-content;
     padding: 10px;
     margin: 10px;
