@@ -31,6 +31,7 @@ If you need another license type added that GitHub has a summary for, let me kno
 
 ## Web interface libraries
 * [code-input](https://github.com/WebCoder49/code-input) and [highlight-js](https://highlightjs.org) for the syntax highlighting.
+* Uses [Nord](https://www.nordtheme.com/ports/highlightjs) port to highlight-js for the theming.
 
 ## Legal Disclaimer
 All of the licenses in this repo are provided as-is with no recommendations on which license you should pick. It is still your responsibility to do the research on the license type that best fits your project and to consult an attorney as needed.
