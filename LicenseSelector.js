@@ -42,6 +42,9 @@ var timeout = null;
             preview.innerHTML = codeBlockText.value;
         }, 1000);
     });
+    if(inIframe()) {
+        document.body.classList.remove("background");
+    }
 })()
 
 async function directoryWalk(url){
@@ -117,3 +120,11 @@ async function showSnackBar(value){
     // After 3 seconds, remove the show class from DIV
     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 } 
+
+function inIframe () {
+    try {
+        return window.self !== window.top;
+    } catch (e) {
+        return true;
+    }
+}

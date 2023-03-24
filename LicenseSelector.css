@@ -3,7 +3,7 @@ html {
     font-family: sans-serif;
 }
 
-body {
+.background {
     background-image: linear-gradient(
         45deg,
         hsl(197deg 100% 62%) 0%,
@@ -52,7 +52,7 @@ code-input textarea {
     box-shadow: 8px 8px rgba(10,10,10,0.5);
     border-radius: 10px;
     resize: both;
-    height: 300px;
+    height: 285px;
     width: 650px;
     overflow: hidden;
     background-color: #2E3440;
@@ -61,8 +61,7 @@ code-input textarea {
 }
 
 .preview{
-    display:inline-block;
-    margin: 10px;
+    display:block;
     color: white;
     background-color: #2E3440;
     box-shadow: 8px 8px rgba(10,10,10,0.5);
@@ -70,6 +69,8 @@ code-input textarea {
     width: fit-content;
     padding: 10px;
     font-family: "IBM Plex Mono", monospace;
+    font-size: 85%;
+    height: 455px;
 }
 
 .preview * {
@@ -158,8 +159,8 @@ a {
     border-radius: 20px;
     box-shadow: 8px 8px rgba(10,10,10,0.5);
     width: fit-content;
-    padding: 10px;
-    margin: 10px;
+    padding: 2px;
+    margin-left: 10px;
     color:white;
 }
 
@@ -190,4 +191,8 @@ a {
 
   .favicon {
     vertical-align: text-bottom;
+  }
+  .column {
+    display: inline-block;
+    vertical-align: top;
   }
