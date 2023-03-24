@@ -9,6 +9,9 @@ var licRoot = 'https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/content
 var timeout = null;
 
 (async () => {
+    if(inIframe()) {
+        document.body.classList.remove("background");
+    }
     try{
         let getcommit = await fetch("https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/commits/main")
         let commit = await getcommit.json();
@@ -42,9 +45,6 @@ var timeout = null;
             preview.innerHTML = codeBlockText.value;
         }, 1000);
     });
-    if(inIframe()) {
-        document.body.classList.remove("background");
-    }
 })()
 
 async function directoryWalk(url){
