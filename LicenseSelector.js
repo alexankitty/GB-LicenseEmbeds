@@ -9,8 +9,8 @@ var licRoot = 'https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/content
 var timeout = null;
 
 (async () => {
-    if(inIframe()) {
-        document.body.classList.remove("background");
+    if(!inIframe()) {
+        document.body.classList.add("background");
     }
     try{
         let getcommit = await fetch("https://api.github.com/repos/alexankitty/GB-LicenseEmbeds/commits/main")
