@@ -15,6 +15,9 @@ Quick and dirty repo for license embeds on GameBanana, designed to mimic how Git
 * Select the **Source** tab in the **License** area and paste the contents of the `html` file.
 * Configure the **License Checklist** appropriately, then save your submission.
 
+# GameBanana Web App
+* You can install this on GameBanana and use it directly on the site [here](https://gamebanana.com/apps/924).
+
 # Usage
 * Open the `html` file of the license you would like to use in a text editor and copy its contents.
 * In GameBanana, open the **Edit** page for your submission.
