@@ -102,7 +102,7 @@ async function onSelect(value){
         let htmlContent = await data.text();
         codeBlockText.value = htmlContent;
         preview.innerHTML = htmlContent;
-        codeBlock.firstChild.oninput() 
+        codeBlock.firstChild.dispatchEvent(new Event('input'));
     }
     catch(e){
         let error = document.getElementById("error");
