@@ -1,6 +1,9 @@
 # GB-LicenseEmbeds
 Quick and dirty repo for license embeds on GameBanana, designed to mimic how GitHub presents its licensing summaries.  
 
+> [!IMPORTANT]
+> The embed templates were updated on 9 May 2025. Please update mods' license markdown to correct an issue with the license badge not displaying correctly in certain circumstances.
+
 ### Example
 
 ![License Embed Example](https://user-images.githubusercontent.com/11445611/226152174-05aa8fa9-c2c3-488d-8e26-18545e108c96.png)
