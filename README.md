@@ -1,7 +1,7 @@
 # GB-LicenseEmbeds
 Quick and dirty repo for license embeds on GameBanana, designed to mimic how GitHub presents its licensing summaries.  
 
-> [IMPORTANT] 
+> [!IMPORTANT] 
 > As of 9 May 2026, the license embed badges are now locally hosted on GitHub Pages to try to alleviate some issues with adblockers blocking the images from loading. It is recommended to update any existing license embeds on your submissions to use the new URLs.
 
 ### Example
