@@ -31,6 +31,15 @@ Quick and dirty repo for license embeds on GameBanana, designed to mimic how Git
 # Other licenses
 If you need another license type added that GitHub has a summary for, let me know or make a PR and update an existing one.
 
+# Contributing
+Contributions are welcome! If you have a license type that you wanted added that is not included in this repo, feel free to make a PR to add it.
+
+When making a PR, please be sure to follow the format of the existing licenses, including the license text and the license shield.
+
+Please also make sure to run `./scripts/build_img_dir.sh` to setup the license shields to be hosted on the repo.
+
+If your chosen license badge is an SVG, please make sure you have inkscape installed as the script will leverage that to convert the SVG to a PNG.
+
 ## License Shields
 * CC license shields are sourced from [licensebuttons.net](https://licensebuttons.net/).
 * Text license shields are generated from [Shields.io](https://shields.io/).
